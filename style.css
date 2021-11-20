@@ -1,0 +1,118 @@
+
+body{
+margin: 0;
+text-align: center;
+border: 20px;
+}
+
+header{
+  background-color: #a9ed3b;
+  padding: 15px;
+  text-align: center;
+  animation: muda-cor 2s ease infinite, alternate;
+}
+
+@keyframes muda-cor{
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: blue;
+  }
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex direction: row;
+  justify-content: space-evenly;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+nav a:visited{
+  color: white;
+}
+
+nav li{
+  background-color: orange;
+  padding: 15px 30px;
+  border-radius: 15px;
+  animation: cor 2s ease infinite alternate;
+}
+
+@keyframes cor{
+  0%{
+    background-color: blue;
+  }
+  50%{
+    background-color: #5a5778;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+
+nav li:hover{
+  background-color: #6f76ed;
+  color: white;
+  transform: scale(1.5);
+  /*font-size: 150%;*/
+  transition: all 1s ease 0s;
+  border-radius: 50px;
+}
+
+#titulo-principal{
+  transition: transform 1s ease;
+  font-size: 25px;
+}
+
+#titulo-principal:hover{
+  transform: scale(2);
+            /*rotate(10deg)*/
+}
+main{
+  margin: 50px;
+}
+
+.imagens img{
+  width: 100px;
+}
+
+.noticias img{
+  width: 400px;
+}
+
+.fruta img{
+  width: 300px;
+}
+
+.frutas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.novo::before{
+  content: "novo !!!";
+  background-color: blue;
+  color: white;
+  border-radius:10px;
+  font-size: 50%;
+  padding: 10px;
+margin-right: 15px;
+}
+
+footer{
+ background-color: #d5e8e7;
+}
+ h2{
+   background-color: #993399;
+ }
